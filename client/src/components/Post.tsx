@@ -1,6 +1,4 @@
 export default function Post({urlToImg, description, likes, namePost}: postProps) {
-    // const [urlToImg, description, likes, namePost, timePost] = props
-    console.log("test")
     return (
         <div className="card-post">
             <img src={urlToImg} />
