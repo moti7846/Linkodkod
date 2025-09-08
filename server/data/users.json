@@ -1,0 +1,9 @@
+[
+    {
+        "userName" : "moti",
+        "password" : 1234,
+        "role" : "admin",
+        "like" : [],
+        "post" : []
+    }
+]
