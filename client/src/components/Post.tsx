@@ -1,3 +1,5 @@
+import "./styles/Post.css"
+
 export default function Post({urlToImg, description, likes, namePost}: postProps) {
     return (
         <div className="card-post">

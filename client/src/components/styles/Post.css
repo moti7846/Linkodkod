@@ -1,0 +1,26 @@
+.card-post {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 305px;
+  background: white;
+  padding: 15px;
+  color: black;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.card-post img {
+  grid-column: 1/4;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.card-post span {
+  padding: 10px;
+  grid-column: 1/4;
+  align-items: center;
+  justify-content: center;
+}
