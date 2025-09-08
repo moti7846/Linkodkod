@@ -17,7 +17,7 @@ app.use(logger)
 
 app.use("/user", userRouter)
 app.use("/posts", postRouter)
-
+app.use(express.static('public'));
 app.use((req, res) => {
   res.status(404).json({ msg: "Route not found." });
 })
