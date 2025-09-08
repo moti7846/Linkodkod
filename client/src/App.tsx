@@ -1,9 +1,15 @@
+import { Route, Routes } from 'react-router'
 import './App.css'
-import Home from "./components/Home"
+import Layout from './components/Layout'
+import Home from './components/Home'
 
 function App() {
   return (
-      <Home />
+    <Layout>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </Layout>
   )
 }
 

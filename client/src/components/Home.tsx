@@ -1,6 +1,5 @@
-import logo from "../assets/icon.png"
 import Post from "./Post"
-
+import "./styles/Home.css"
 const posts = [
     {
         "urlToImg": "https://livedoor.blogimg.jp/news4vip2/imgs/9/b/9b627530-s.png",
@@ -29,14 +28,8 @@ const posts = [
 ]
 export default function Home() {
     return (
-        <div className='home-page'>
-            <div className='nav-menu'>
-                <p>my app</p>
-                <img src={logo} alt="" />
-            </div>
-            <div className="grid-cards">
-                {posts.map((p) => (<Post urlToImg={p.urlToImg} description={p.description} likes={p.likes} namePost={p.namePost} />))}
-            </div>
+        <div className="grid-cards">
+            {posts.map((p) => (<Post urlToImg={p.urlToImg} description={p.description} likes={p.likes} namePost={p.namePost} />))}
         </div>
     )
 }

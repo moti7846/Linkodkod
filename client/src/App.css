@@ -8,20 +8,24 @@
   background-color: aquamarine;
   justify-content: space-between;
 }
-.nav-menu img{
+
+.nav-menu img {
   height: 90%;
   padding: 30px;
 }
-.nav-menu p{
+
+.nav-menu p {
   font-weight: 600;
   padding: 30px;
 }
 
 /* card */
 .grid-cards {
+  margin: 0px 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 10px;
+  justify-items: center;
 }
 
 .card-post {
