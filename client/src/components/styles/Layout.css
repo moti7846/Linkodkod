@@ -1,0 +1,9 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  position: static;
+  height: 60px;
+  width: 100%;
+  background-color: aquamarine;
+  justify-content: space-between;
+}
