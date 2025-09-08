@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 305px;
+  height: 440px;
   background: white;
   padding: 15px;
   color: black;

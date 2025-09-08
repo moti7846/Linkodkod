@@ -1,7 +1,7 @@
 .nav-menu {
   display: flex;
   align-items: center;
-  position: static;
+  position: sticky;
   height: 60px;
   width: 100%;
   background-color: aquamarine;

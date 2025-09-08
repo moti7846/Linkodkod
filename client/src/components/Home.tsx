@@ -28,7 +28,7 @@ const posts = [
 ]
 export default function Home() {
     return (
-        <div className="grid-cards">
+        <div className="grid-cards home">
             {posts.map((p) => (<Post urlToImg={p.urlToImg} description={p.description} likes={p.likes} namePost={p.namePost} />))}
         </div>
     )

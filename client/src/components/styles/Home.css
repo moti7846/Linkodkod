@@ -1,7 +1,12 @@
+.home {
+  background-color: rgba(19, 0, 223, 0.899);
+  min-height: 91.4vh;
+}
+
 .grid-cards {
-  margin: 0px 10px;
+  margin: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+  gap: 1px 10px;
   justify-items: center;
 }
