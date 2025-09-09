@@ -7,3 +7,16 @@
   background-color: aquamarine;
   justify-content: space-between;
 }
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h2 {
+  font-size: 40px;
+  color: black;
+  padding: 25px;
+  background-color: red;
+}

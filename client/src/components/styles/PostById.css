@@ -1,0 +1,55 @@
+.PostById {
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+}
+
+#root {
+    background-color: rgba(223, 141, 0, 0.899);
+    min-height: 91.4vh;
+}
+
+.post {
+    background-color: aliceblue;
+    border-radius: 50px;
+    max-height: 80vh;
+    width: 85%;
+    display: grid;
+    grid-template-areas:
+        "namePost . ."
+        "imgPost imgPost imgPost"
+        "descriptionPost descriptionPost descriptionPost"
+        "likesPost likesPost timePost";
+    grid-template-rows: auto 3fr auto auto;
+    gap: 10px;
+    justify-items: center;
+    border: 1px solid black;
+}
+
+.post #imgPost {
+    grid-area: imgPost;
+    height: 40vh;
+
+}
+
+.post #descriptionPost {
+    grid-area: descriptionPost;
+}
+
+.post #likesPost {
+    grid-area: likesPost;
+    padding: 15px;
+}
+
+.post #namePost {
+    grid-area: namePost;
+    padding: 15px;
+
+}
+
+.post #timePost {
+    grid-area: timePost;
+    padding: 15px;
+
+
+}

@@ -2,12 +2,16 @@ import { Route, Routes } from 'react-router'
 import './App.css'
 import Layout from './components/Layout'
 import Home from './components/Home'
+import PostById from './components/PostById'
+import InputIdPost from './components/application-layout/InputIdPost'
 
 function App() {
   return (
     <Layout>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path="/post/:id" element={<PostById />} />
+        <Route path="/form_by_id" element={<InputIdPost />} />
       </Routes>
     </Layout>
   )
