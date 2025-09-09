@@ -1,3 +1,7 @@
+.PostById {
+  display: grid;
+  justify-items: center;
+}
 #root {
     background-color: rgba(223, 141, 0, 0.899);
     min-height: 91.4vh;

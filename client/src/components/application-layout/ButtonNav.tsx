@@ -2,6 +2,6 @@
 
 // export default function ButtonNav() {
 //   return (
-//     <Link />
+//     <Link to="/">home</Link>
 //   )
 // }

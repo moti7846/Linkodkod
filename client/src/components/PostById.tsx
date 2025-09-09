@@ -13,6 +13,8 @@ export default function PostById() {
         "img": ""
     }
     return (
-        <Post urlToImg={`http://localhost:3200/${p.id}.png`} description={p.description} likes={p.likes} namePost={p.name} styleClass="post" />
+        <div className="PostById">
+            <Post urlToImg={`http://localhost:3200/${p.id}.png`} description={p.description} likes={p.likes} namePost={p.name} styleClass="post" />
+        </div>
     )
 }
