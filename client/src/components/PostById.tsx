@@ -35,7 +35,7 @@ export default function PostById() {
             }
 
             {
-                !isLoader && !isError && <Post urlToImg={`http://localhost:3200/${post.id}.png`} description={post.description} likes={post.likes} namePost={post.name} styleClass="post" />
+                !isLoader && !isError && <Post urlToImg={`http://localhost:3200/${post.id}.png`} description={post.description} likes={post.likes} namePost={post.name} styleClass="post" id={post.id} />
             }
 
             {

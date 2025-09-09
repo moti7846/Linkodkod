@@ -18,7 +18,7 @@ export default function Home() {
                 setTimeout(() => {
                     setIsLoader((p) => !p)
                     setPost(data);
-                }, 5000);
+                }, 2000);
             })
             .catch(() => {
                 setIsError(true)
@@ -35,7 +35,7 @@ export default function Home() {
                 isLoader && <span className="loader"></span>
             }
             {
-                !isError && posts.map((p) => (<Post urlToImg={`http://localhost:3200/${p.id}.png`} description={p.description} likes={p.likes} namePost={p.name} />))
+                !isError && posts.map((p) => (<Post urlToImg={`http://localhost:3200/${p.id}.png`} description={p.description} likes={p.likes} namePost={p.name} id={p.id} />))
             }
 
             {
