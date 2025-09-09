@@ -1,15 +1,17 @@
 .PostById {
-  display: grid;
-  justify-items: center;
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
 }
+
 #root {
     background-color: rgba(223, 141, 0, 0.899);
     min-height: 91.4vh;
 }
+
 .post {
     background-color: aliceblue;
     border-radius: 50px;
-    margin-top: 15px;
     max-height: 80vh;
     width: 85%;
     display: grid;
@@ -19,7 +21,6 @@
         "descriptionPost descriptionPost descriptionPost"
         "likesPost likesPost timePost";
     grid-template-rows: auto 3fr auto auto;
-    align-items: center;
     gap: 10px;
     justify-items: center;
     border: 1px solid black;

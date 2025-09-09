@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "moti-test",
+        "name": "post 1",
         "description": "test post",
         "time": "18:55",
         "likes": 18,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "moti-test",
+        "name": "post 2",
         "description": "test post",
         "time": "18:55",
         "likes": 18,
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "moti-test",
+        "name": "post 3",
         "description": "test post",
         "time": "18:55",
         "likes": 18,
