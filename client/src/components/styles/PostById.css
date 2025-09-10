@@ -1,12 +1,9 @@
 .PostById {
-    margin-top: 15px;
-    display: grid;
-    justify-items: center;
-}
-
-#root {
     background-color: rgba(223, 141, 0, 0.899);
     min-height: 91.4vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .post {

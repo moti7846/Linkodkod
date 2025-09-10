@@ -1,0 +1,9 @@
+header button {
+    padding: 7px 20px;
+    background-color: rgb(7, 80, 0);
+    color: #b0daff;
+    font-weight: 700;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    cursor: pointer;
+}
