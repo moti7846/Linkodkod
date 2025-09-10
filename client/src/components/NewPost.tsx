@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./styles/NewPost.css"
+import { UserContext } from "../App";
 
 export default function NewPost() {
+    const user = useContext(UserContext).user;
     const [msg, setMsg] = useState("")
     const [isLoading, setIsLoading] = useState(false)
 
@@ -15,7 +17,8 @@ export default function NewPost() {
         const response = await fetch("http://localhost:3200/posts/create", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+        //   "token" : user.token
         },
         body: JSON.stringify({ name, description, time : new Date().toLocaleString() , likes })
       })
@@ -29,7 +32,7 @@ export default function NewPost() {
         <form onSubmit={formNewPost}>
             <h2>create new post</h2>
             <label htmlFor="name">name</label>
-            <input type="text" required maxLength={20} id="name" />
+            <input type="text" value={user.userName} id="name" />
             <label htmlFor="description">description</label>
             <input type="text" required maxLength={240} id="description" />
             <label htmlFor="likes">likes</label>

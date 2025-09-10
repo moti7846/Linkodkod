@@ -20,13 +20,21 @@ export async function createUser(user) {
     }
 }
 
-export async function readUsers() {
+export async function readUser(userName) {
     try {
-        return await readDBFile(path);
+        const users =  await readDBFile(path);
+        const user = users.find((u) => u.userName === userName)
+        return {user}
     } catch (error) {
-        console.log({ "readUsers error": error });
-        return false;
+        return {error};
     }
+}
+
+export async function readByName(name) {
+  const { data, error } = await sb.from("players").select("*").eq("username", name).single();
+  if (error)
+    return { error };
+  return data;
 }
 
 export async function updateUser(user) {
