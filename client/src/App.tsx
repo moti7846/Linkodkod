@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/post/:id" element={<PostById />} />
-        <Route path="/form_by_id" element={<InputIdPost />} />
+        <Route path="/form-by-id" element={<InputIdPost />} />
       </Routes>
     </Layout>
   )
