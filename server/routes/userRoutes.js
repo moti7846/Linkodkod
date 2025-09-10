@@ -1,10 +1,11 @@
 import express from 'express';
+import { getUser } from '../controllers/userControllers.js';
 
 const router = express.Router();
 
-// GET /user/login -> token
-// router.post("/login")
-// GET /user/singup -> create new user 
+// post /user/login -> token
+router.post("/login", getUser)
+// post /user/singup -> create new user 
 // router.post("/signup")
 
 
