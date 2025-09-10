@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import "./styles/Post.css"
 
-export default function Post({ urlToImg, description, likes, namePost, styleClass , id }: postProps) {
+export default function Post({ urlToImg, description, likes, namePost, styleClass , id , time}: postProps) {
     const navigate = useNavigate();
     return (
         <div className={styleClass || 'card-post'}>
@@ -9,7 +9,7 @@ export default function Post({ urlToImg, description, likes, namePost, styleClas
             <span id="descriptionPost">{description}</span>
             <p id="likesPost">{likes} ❤️</p>
             <p id="namePost">{namePost}</p>
-            <p id="timePost">{new Date().toLocaleTimeString()}</p>
+            <p id="timePost">{time}</p>
         </div>
     )
 }
@@ -21,4 +21,5 @@ type postProps = {
     namePost: string
     styleClass?: string
     id : string | number
+    time : string
 };

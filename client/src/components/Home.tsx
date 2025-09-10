@@ -35,7 +35,7 @@ export default function Home() {
                 isLoader && <span className="loader"></span>
             }
             {
-                !isError && posts.map((p) => (<Post urlToImg={`http://localhost:3200/${p.id}.png`} description={p.description} likes={p.likes} namePost={p.name} id={p.id} />))
+                !isError && posts.map((p) => (<Post urlToImg={`http://localhost:3200/posts/img:${p.id}`} description={p.description} likes={p.likes} namePost={p.name} id={p.id} time={p.time} />))
             }
 
             {
@@ -49,5 +49,6 @@ type Post = {
     id : string | number,
     description: string,
     likes: number,
-    name: string
+    name: string,
+    time : string
 }

@@ -10,7 +10,7 @@ export async function create_post(post) {
         if(data.length) {
             id = Number(data[data.length - 1].id) + 1
         } else {
-            id = 0
+            id = 1
         }
         data.push({...post , id});
     } catch (error) {

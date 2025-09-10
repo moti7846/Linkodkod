@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import PostById from './components/PostById'
 import InputIdPost from './components/InputIdPost'
+import NewPost from './components/NewPost'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path="/post/:id" element={<PostById />} />
         <Route path="/form-by-id" element={<InputIdPost />} />
+        <Route path="/create-new-post" element={<NewPost />} />
       </Routes>
     </Layout>
   )
