@@ -4,19 +4,6 @@
   position: sticky;
   height: 60px;
   width: 100%;
-  background-color: aquamarine;
+  background-color: rgb(94, 246, 195);
   justify-content: space-between;
-}
-
-.error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.error h2 {
-  font-size: 40px;
-  color: black;
-  padding: 25px;
-  background-color: red;
 }

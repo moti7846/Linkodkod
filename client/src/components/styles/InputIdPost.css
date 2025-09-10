@@ -1,0 +1,20 @@
+.InputIdPost {
+    background-color: aqua;
+    min-height: 91.4vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#card-input-id {
+    height: 10em;
+    width: 20em;
+    background-color: rgba(176, 61, 61, 0.803);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid orange;
+    border-radius: 10px;
+}
